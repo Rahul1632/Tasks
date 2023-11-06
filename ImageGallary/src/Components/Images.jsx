@@ -78,10 +78,10 @@ const ImageContainer = () => {
             data.map((image) => (
               <div
                 key={image.id}
-                className="w-[430px] md:w-[380px] lg:w-[400px] h-[350px] relative text-center mb-5 hover:scale-105"
+                className="w-[430px] md:w-[380px] lg:w-[400px] h-auto relative text-center mb-5 hover:scale-105"
               >
                 <img
-                  className="w-full h-full rounded shadow-2xl shadow-black"
+                  className="w-full h-[700px] rounded shadow-2xl shadow-black"
                   src={`https://farm${image.farm}.staticflickr.com/${image.server}/${image.id}_${image.secret}_m.jpg`}
                   alt={image.title}
                   title={image.title}
@@ -93,7 +93,7 @@ const ImageContainer = () => {
             ))
           ) : (
             <div className="text-3xl text-[#000080] font-bold">
-              Sorry, data not present. Please try again!
+              Please wait images are loading...
             </div>
           )}
         </div>
