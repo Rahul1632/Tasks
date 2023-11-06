@@ -26,7 +26,10 @@ const ImageContainer = () => {
     }
   };
 
-  const debouncedFetchData = useMemo(() => debounce(fetchData, 1000), [input]);
+  const debouncedFetchData = useMemo(
+    () => debounce(fetchData, 1000),
+    [input, baseUrl]
+  );
 
   useEffect(() => {
     if (tagName !== "") {
@@ -78,10 +81,10 @@ const ImageContainer = () => {
             data.map((image) => (
               <div
                 key={image.id}
-                className="w-[430px] md:w-[380px] lg:w-[400px] h-auto relative text-center mb-5 hover:scale-105"
+                className="w-[430px] md:w-[380px] lg:w-[400px] h-[400px] relative text-center mb-5 hover:scale-105"
               >
                 <img
-                  className="w-full h-[700px] rounded shadow-2xl shadow-black"
+                  className="w-full h-full rounded shadow-2xl shadow-black"
                   src={`https://farm${image.farm}.staticflickr.com/${image.server}/${image.id}_${image.secret}_m.jpg`}
                   alt={image.title}
                   title={image.title}
