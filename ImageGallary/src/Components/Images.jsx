@@ -73,18 +73,18 @@ const ImageContainer = () => {
             </div>
           ))}
         </div>
-        <h1 className="text-4xl mt-4 font-extrabold capitalize text-[#000080]">
+        <h1 className="text-4xl my-8 font-extrabold capitalize text-[#000080]">
           {input === "" ? tagName : input}
         </h1>
-        <div className="flex flex-wrap gap-5 h-full overflow-y-auto justify-center w-full m-0 py-10 px-5">
+        <div className="flex flex-wrap gap-10 h-full overflow-y-auto justify-center w-full m-0">
           {data.length > 0 ? (
             data.map((image) => (
               <div
                 key={image.id}
-                className="w-[430px] md:w-[380px] lg:w-[400px] h-[400px] relative text-center mb-5 hover:scale-105"
+                className="w-[430px] md:w-[380px] lg:w-[400px] h-[350px] relative text-center mb-5 hover:scale-105"
               >
                 <img
-                  className="w-full h-full rounded shadow-2xl shadow-black"
+                  className="w-full h-full rounded shadow-2xl shadow-gray-600"
                   src={`https://farm${image.farm}.staticflickr.com/${image.server}/${image.id}_${image.secret}_m.jpg`}
                   alt={image.title}
                   title={image.title}
