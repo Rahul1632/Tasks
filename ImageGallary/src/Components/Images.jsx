@@ -1,11 +1,19 @@
 import { useState, useEffect, useMemo } from "react";
 import { debounce } from "lodash";
 import { buttonsArray } from "./Data";
+import ImageShimmer from "./ImageShimmer";
 
 const ImageContainer = () => {
+  const initialState = () => {
+    setTagName("");
+    setTagNameBtnState("");
+    setInput("");
+  };
   const [input, setInput] = useState("");
   const [data, setData] = useState([]);
   const [tagName, setTagName] = useState("");
+  const [tagNameBtnState, setTagNameBtnState] = useState("");
+
   const apiKey = "636e1481b4f3c446d26b8eb6ebfe7127";
   const baseUrl = `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=%22${
     input === "" ? tagName : input
@@ -26,10 +34,7 @@ const ImageContainer = () => {
     }
   };
 
-  const debouncedFetchData = useMemo(
-    () => debounce(fetchData, 1000),
-    [input, baseUrl]
-  );
+  const debouncedFetchData = useMemo(() => debounce(fetchData, 1000), [input]);
 
   useEffect(() => {
     if (tagName !== "") {
@@ -39,6 +44,16 @@ const ImageContainer = () => {
     }
     return () => debouncedFetchData.cancel();
   }, [tagName, debouncedFetchData]);
+
+  const onTagNameBtnClicked = (item) => {
+    if (tagNameBtnState === item) {
+      initialState();
+    } else {
+      setTagNameBtnState(item);
+      setTagName(item);
+      setInput(item);
+    }
+  };
 
   return (
     <>
@@ -52,31 +67,26 @@ const ImageContainer = () => {
           placeholder="Search here"
           value={input}
           autoComplete="off"
-          className="p-2 w-1/2 rounded shadow-lg border-2 border-[#000080] focus:outline-none"
+          className="p-2 w-1/2 rounded shadow-lg border-2 border-[#000080] focus:outline-none capitalize"
           onChange={handleInputChange}
         />
         <div className="p-2 mt-5 flex items-center justify-center flex-wrap gap-3">
           {buttonsArray.map((item) => (
-            <div key={item}>
-              <button
-                onClick={() => {
-                  setTagName(item);
-                  setInput("");
-                }}
-                style={{
-                  backgroundColor: tagName === item ? "#60A5FA" : "#000080",
-                }}
-                className="rounded py-2 px-3 text-white font-bold bg-blue-400 cursor-pointer"
-              >
-                {item}
-              </button>
-            </div>
+            <button
+              onClick={() => onTagNameBtnClicked(item)}
+              key={item}
+              className={`rounded py-2 px-3 text-white font-bold  ${
+                tagNameBtnState === item ? "bg-[#000080]" : "bg-blue-400"
+              }  cursor-pointer`}
+            >
+              {item}
+            </button>
           ))}
         </div>
         <h1 className="text-4xl my-8 font-extrabold capitalize text-[#000080]">
           {input === "" ? tagName : input}
         </h1>
-        <div className="flex flex-wrap gap-10 h-full overflow-y-auto justify-center w-full m-0">
+        <div className="flex flex-wrap gap-10 h-full overflow-y-auto justify-center w-full px-2 m-0">
           {data.length > 0 ? (
             data.map((image) => (
               <div
@@ -95,9 +105,7 @@ const ImageContainer = () => {
               </div>
             ))
           ) : (
-            <div className="text-3xl text-[#000080] font-bold">
-              Please wait images are loading...
-            </div>
+            <ImageShimmer />
           )}
         </div>
       </div>
