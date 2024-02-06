@@ -1,0 +1,100 @@
+@import "./slack.css";
+@import "./utility.css";
+@import "./customnodes.css";
+@import "./ifcondition.css";
+@import "./addbuttonsidebar.css";
+@import "./messagessiserbar.css";
+@import "./selectmedia.css";
+@import "./navbar.css";
+@import "./login.css";
+@import "./dashboard.css";
+@import "./sidemenu.css";
+@import "./dashboardnavbar.css";
+@import "./chatbot.css";
+@import "./loader.css";
+@import "./edge.css";
+@import "./noDataIndicatePage.css";
+@import "./flowmanger.css";
+@import "./updatesidebar.css";
+@import "./nodePopUp.css";
+@import "./shareflow.css";
+@import "./shareflowsidebar.css";
+
+body {
+  font-family: "Gotham Rounded SSm A", "Gotham Rounded SSm B", "Gotham Rounded",
+    Helvetica, sans-serif;
+}
+
+:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+}
+
+.gridStyle {
+  /* position: relative */
+  display: grid !important;
+  grid-template-columns: max-content auto;
+  height: 100vh !important;
+  margin: 0;
+}
+
+.mainPart {
+  /* position: absolute; */
+  width: 100% !important;
+  height: 100% !important;
+  left: 15%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  padding: 0 !important;
+  padding-bottom: 0rem;
+  transition: 0.3s;
+}
+
+.react-flow-main {
+  height: 100vh;
+  width: 100%;
+}
+
+.react-flow {
+  height: 100% !important;
+  background-color: aliceblue;
+  flex: 1;
+}
+
+.main-screen {
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* background-color: #45496e; */
+  /* border-top: 0 solid #d8d8d8; */
+  /* box-shadow: 12px 0 44px -9px #929292; */
+  /* height: 93.3vh; */
+  position: relative;
+}
+
+.flow-part {
+  height: 90.5vh;
+  width: 100%;
+}
+
+.right-part {
+  margin: 2rem;
+}
+
+.btn-bot {
+  background-color: #295e62 !important;
+  color: #fff !important;
+  border: 0 !important;
+}
+
+.btn-bot::placeholder {
+  color: #fff !important;
+}
+
+.my-modal .modal-content {
+  border-radius: 20px !important;
+}
+
+.react-flow__node {
+  visibility: visible !important;
+}

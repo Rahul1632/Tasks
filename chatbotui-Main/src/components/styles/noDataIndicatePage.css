@@ -1,0 +1,44 @@
+.no-data-indicate-page {
+  height: 49rem;
+  display: grid;
+  place-items: center;
+}
+
+.no-data-indicate-content {
+  color: #132746;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: var(--height);
+}
+
+.showEmptyMessageAsAlert {
+  place-self: start;
+  width: 100%;
+}
+
+.no-data-indicate-content h5 {
+  font-size: 2rem !important;
+  margin: 0;
+  text-align: center !important;
+  opacity: 0.5;
+}
+
+.no-data-indicate-content i {
+  font-size: 10rem;
+  color: #132746;
+  padding: 1.5rem;
+}
+.no-data-indicate-content span i {
+  font-size: 1rem;
+  color: #d0ddff;
+  padding: 0.8rem;
+}
+
+.no-data-indicate-icon {
+  font-size: 8rem;
+  opacity: 0.5;
+}
+
+

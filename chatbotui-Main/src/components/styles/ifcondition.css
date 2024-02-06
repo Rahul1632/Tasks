@@ -1,0 +1,50 @@
+.offcanvas {
+  height: 88vh !important;
+  margin-top: 5% !important;
+  width: 30% !important;
+  appearance: none !important;
+}
+
+.if-sidebar-main ::-webkit-scrollbar {
+  width: 0px;
+}
+
+.if-sidebar-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.more-condition-container {
+  margin-top: -25px;
+}
+
+.and-or-condition-button {
+  display: flex;
+  align-self: center;
+  margin-left: 14rem;
+}
+
+.and-or-condition-button Button {
+  margin-right: 5px;
+}
+
+.add-more-condition-icon {
+  display: flex;
+  align-items: center;
+  align-self: end;
+}
+
+.add-more-condition-icon i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.if-cindition-add-close-btn {
+  display: flex;
+  align-items: center;
+  align-self: end;
+}
+
+.if-cindition-add-close-btn Button {
+  margin-left: 5px;
+}

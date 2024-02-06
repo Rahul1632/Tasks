@@ -1,0 +1,134 @@
+.chat-bot {
+  background-color: rgb(241, 242, 249);
+  overflow: auto;
+  min-height: 100vh;
+}
+::-webkit-scrollbar {
+  width: 7px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #babac0 !important;
+  border-radius: 10px !important;
+}
+
+.bot-header {
+  display: inline-flex;
+  align-items: center;
+  background-color: #fff;
+  z-index: 10;
+  width: 100%;
+  height: 95px;
+  top: 0px;
+  left: 0px;
+  padding: 10px 30px;
+  border-bottom: 1px solid transparent;
+  transition: height 0.25s ease-in-out 0s;
+  box-shadow: rgb(0 0 0 / 16%) 0px 2px 18px 0px;
+  color: rgb(47, 50, 74);
+  position: fixed;
+}
+
+.bot-header-logo img {
+  height: 70px;
+  margin-right: 10px;
+}
+
+.logo-name {
+  font-size: 23px;
+  margin-bottom: 0;
+  font-weight: 700 !important;
+}
+
+.logo-text {
+  font-size: 15px;
+  margin-bottom: 0;
+  font-weight: 400 !important;
+}
+
+.main-conversation {
+  justify-content: center;
+  padding-top: 145px;
+  margin: 0% auto 20px auto;
+  max-width: 700px;
+  /* height: 100vh; */
+}
+
+.message-container {
+  display: flex;
+  visibility: hidden;
+  animation: var(--time) fadeIn;
+  animation-fill-mode: forwards;
+}
+
+.bot-message-container {
+  display: flex;
+  margin: 10px 0;
+  overflow: visible;
+  border-radius: 0.75rem 0.75rem 0.75rem 0.125rem;
+  padding: 0.5rem 1.5rem;
+  width: fit-content;
+  background-color: rgb(255, 255, 255);
+  color: rgb(47, 50, 74);
+  word-break: break-all;
+}
+
+.bot-user-message {
+  border-radius: 0.75rem 0.75rem 0.125rem 0.75rem !important;
+  background-color: #2b96f4 !important;
+  color: #fff !important;
+  word-break: break-all !important;
+}
+
+.option-container-main {
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  animation: var(--optionTime) fadeIn;
+  animation-fill-mode: forwards;
+}
+
+.bot-option-container {
+  display: flex;
+  cursor: pointer;
+  margin: 10px 10px 10px 0px;
+  overflow: visible;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1.5rem;
+  width: fit-content;
+  background-color: #2b96f4;
+  color: rgb(255, 255, 255);
+  word-break: break-all;
+}
+
+.bot-option-container:hover {
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 21px -11px,
+    rgb(47 49 72 / 30%) 0px 13px 17px -16px;
+}
+
+.option-heading {
+  font-size: 12px;
+  color: rgb(47, 50, 74);
+}
+
+.start-again {
+  border: none !important;
+  width: fit-content;
+  height: 2rem;
+  font-size: 13px !important;
+  border-radius: 12px !important;
+  background-color: #227ee7 !important;
+}
+
+.start-again:hover {
+  background-color: #5288c5 !important;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}

@@ -1,0 +1,79 @@
+.select-media-container .modal-content {
+  border-radius: 15px !important;
+  box-shadow: 0 12px 15px 0 rgb(0 0 0 / 3%);
+  top: 16rem;
+}
+
+.select-add-media-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.selectmedia-option-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selectmedia-option-list i {
+  font-size: 6.5rem;
+  color: #babac0;
+  margin-bottom: 5px;
+}
+
+.selectmedia-uploadfile-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selectmedia-uploadfile-text span {
+  margin: 10px 0px;
+}
+
+.uploadfile-text {
+  display: flex;
+  align-items: center;
+}
+
+.uploadfile-text-input input {
+  width: 24rem;
+  height: 2.5rem;
+  border: 1px solid #babac0;
+  border-radius: 5px;
+}
+
+.media-sumbit-loader {
+  background-color: white !important;
+  border: none !important;
+  width: 6rem !important;
+  height: 20px !important;
+}
+
+.media-sumbit-loader div {
+  margin-left: 3rem;
+}
+
+.wait-uploading {
+  color: green;
+  height: 30px;
+  font-size: 12px;
+}
+
+.wait-uploading-error {
+  display: flex;
+  width: 100%;
+  color: rgb(219, 2, 2);
+  align-items: center;
+  height: 30px;
+  font-size: 12px;
+  justify-content: center;
+  margin-right: 24px !important;
+}
+
+.selectmedia-uploadfile-text .uploadfile-text input {
+  width: 6.1rem;
+  margin-right: 15px;
+}

@@ -1,0 +1,31 @@
+.messages-add-sidebar-option {
+  display: flex;
+  background-color: #babac0;
+  border: 1px solid #babac0;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.messages-sidebar-option1 {
+  margin-right: 20px;
+}
+
+.messages-add-input {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.messages-addmedia-sidebar {
+  border: 1px solid #babac0;
+  height: 5rem;
+  width: 100%;
+  margin-top: 5px;
+  background-color: #babac0;
+}
+
+.messages-addmedia-sidebar span {
+  padding: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,74 @@
+.add-node-card {
+  background-color: rgba(58, 63, 90, 0.65) !important;
+  border: 0px !important;
+  border-radius: 10px !important;
+  height: 37px;
+  padding: 0;
+  position: absolute !important;
+  top: var(--top);
+  left: var(--left);
+  z-index: 5;
+  /* width: 100%; */
+}
+
+.add-node-container {
+  animation: bounceIn 0.3s ease-in-out;
+  box-shadow: none;
+  position: absolute;
+  will-change: transform;
+  top: 0px;
+  left: 0px;
+  z-index: 4;
+}
+
+.add-node-card-body {
+  background: #3a3d5c !important;
+  padding: 0 !important;
+  border-radius: 5px !important;
+}
+
+.add-node-list {
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 5px;
+}
+
+.add-node-list .list-group-item {
+  padding: 0 1rem !important;
+  background-color: transparent;
+  border-radius: 5px !important;
+  color: #fff;
+  border: 0 !important;
+  cursor: pointer;
+}
+
+.add-node-list-container {
+  height: 242px;
+  width: 270px;
+  overflow: auto;
+}
+
+.add-node-list-container::-webkit-scrollbar {
+  width: 0px !important;
+}
+
+.add-node-card .sidebar-heading {
+  background-color: #3a3d5c;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.add-node-card .type-icon {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.add-node-card .type-name {
+  font-size: 100%;
+}
+
+.add-node-card .list-group-item:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}

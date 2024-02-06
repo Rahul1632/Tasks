@@ -1,0 +1,293 @@
+.react-flow__node-input {
+  border-radius: 0px !important;
+  border-width: 0px !important;
+  color: none !important;
+  padding: 0px !important;
+}
+
+.react-flow__node-input.selected,
+.react-flow__node-input.selected:hover {
+  box-shadow: none !important;
+}
+
+.react-flow__node-input {
+  background: none !important;
+  border-color: none !important;
+}
+
+.special-node-main-container {
+  border: 1px solid #f2f3f7 !important;
+  border-radius: 10px !important;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+}
+
+.special-node-welcome-container {
+  background-color: #fff !important;
+  border-radius: 10px 10px 0 0 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px !important;
+  padding: 7px 13px !important;
+}
+
+.special-node-body {
+  background-color: #edeef9;
+  padding: 7px !important;
+  border-radius: 0 0 10px 10px;
+}
+
+.special-node-inputbox textarea {
+  background-color: white;
+  border: 0;
+  width: 100%;
+  outline: none;
+  height: 5rem;
+  resize: none;
+}
+.special-node-button {
+  position: relative;
+}
+
+.special-node-button input {
+  border-radius: 5px;
+  width: 100%;
+  /* text-align: center; */
+  padding: 5px 15px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.special-node-button input::placeholder {
+  color: #fff;
+}
+
+.special-node-dot {
+  top: 84% !important;
+}
+
+.node-handle {
+  background-color: rgb(121, 213, 148) !important;
+  height: 15px !important;
+  width: 15px !important;
+  border-radius: 51% !important;
+  font-size: x-small;
+  color: white;
+}
+
+.customnode-main-containerbox {
+  background-color: #fff !important;
+  border-radius: 10px 10px 0 0 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.node-target-handle {
+  background-color: transparent !important;
+  height: 100% !important;
+  border: 0 !important;
+}
+
+.special-node-delete-more {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  cursor: pointer;
+}
+
+.special-node-img {
+  display: flex;
+  align-items: center;
+}
+
+.special-node-img span {
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+/* ------------------------------------------IF Condition Node------------------------------------------------- */
+
+.ifcondition-node-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ifcondition-node-header {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  align-items: center;
+}
+
+.ifcondition-name span {
+  padding: 5px;
+}
+
+.ifcondition-node-icon {
+  display: flex;
+  justify-content: space-between;
+  width: 18%;
+}
+
+.ifcondition-node-body {
+  padding: 4px 1px !important;
+}
+
+.ifcondition-node-inputbox div {
+  background-color: black;
+  width: 14rem;
+  height: 5rem;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.ifcondition-name {
+  color: aliceblue;
+}
+
+.ifcondition-right1-node span,
+.ifcondition-right2-node span {
+  position: absolute;
+  top: 8px;
+  left: 13px;
+}
+
+.ifcondition-right1-node .node-handle {
+  background-color: rgb(121, 213, 148) !important;
+}
+
+.ifcondition-right2-node .node-handle {
+  background-color: red !important;
+}
+
+.ifcondition-name span:first-child {
+  color: #c58af9;
+}
+
+.ifcondition-name span:nth-child(3) {
+  color: lightgreen;
+}
+
+/* -------------------------------------MessagesNode-------------------------------------- */
+
+.message-media-node-button {
+  display: flex;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.message-media-node-button Button {
+  width: 7rem;
+  height: 2.3rem;
+  background-color: #babac0;
+  border: none;
+}
+
+.message-media-node-button Button:hover {
+  background-color: #babac0;
+}
+
+.message-media-node-button2 {
+  margin-left: 11px;
+}
+
+/* ----------------------------------EmailNode------------------------------------ */
+.email-customnode-card {
+  width: 14rem;
+}
+
+.email-customnode-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 0px !important;
+  justify-content: space-around;
+  padding: 7px 8px !important;
+}
+
+.emailnode-question {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.emailnode-question-span1 {
+  font-weight: 600;
+  font-size: 16px;
+}
+.emailnode-question-span2 {
+  font-size: 14px;
+}
+
+.emailnode-delete-more,
+.special-node-delete-more,
+.special-node-add-morebtn {
+  background-color: #babac0;
+  border: 1px solid #babac0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  cursor: pointer !important;
+  opacity: 0;
+  right: calc(100% + 9px);
+  position: absolute;
+  top: 1px;
+  padding: 6px;
+}
+
+.special-node-add-morebtn {
+  top: 10% !important;
+  width: fit-content !important;
+  margin-right: 4px;
+}
+
+.email-customnode-card:hover .emailnode-delete-more,
+.special-node-main-container:hover .special-node-delete-more {
+  opacity: 1 !important;
+}
+
+.more-btn-show:hover .special-node-add-morebtn {
+  opacity: 1;
+}
+
+.node-text-box {
+  padding: 10px;
+}
+
+.node-text-box:focus {
+  border: 4px solid greenyellow;
+  width: 250px;
+  height: 100px;
+}
+
+.node-icon {
+  height: 25px;
+  width: 25px;
+}
+
+.emailnode-img {
+  width: 17%;
+}
+
+.border-analyze {
+  position: absolute;
+  left: 15rem;
+  top: 10.5rem;
+  border-right: 5px solid red;
+  border-top: 5px solid red;
+  border-radius: 0px 10px 0px 0px;
+  height: 55px;
+  width: 25px;
+}
+/* 
+.analyze-user-count {
+  width: 16rem;
+  height: 4rem;
+} */

@@ -1,0 +1,85 @@
+.sidemenu {
+  background: #123438 !important;
+}
+
+.sidebar-navlink {
+  background: none;
+  padding: 0 5px;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 5px 10px;
+}
+
+.sidebar-navlink:hover svg {
+  color: #00b8d0 !important;
+}
+
+.active-menu svg {
+  color: #00b8d0 !important;
+}
+
+.layout-content {
+  min-height: 100vh;
+  background-color: #f9fbfd;
+}
+
+.sidemenu-icon {
+  font-size: 28px;
+  font-weight: 900;
+  height: 40px;
+  margin: 8px 0px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.sidemenu-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #1769aa; */
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.sidemenu-logo .logo {
+  width: 80%;
+}
+
+.logo {
+  width: 100%;
+}
+
+.row > * {
+  padding: 0 !important;
+}
+
+.sidemenu-main {
+  display: flex;
+  width: 15rem !important;
+}
+
+.sidemenu-icon-list {
+  height: 100%;
+  width: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidemenu-side-option {
+  border: 1px solid #babac0;
+  width: 100%;
+  height: 100vh;
+  margin-left: 3px;
+}
+
+a {
+  text-decoration: none !important;
+}

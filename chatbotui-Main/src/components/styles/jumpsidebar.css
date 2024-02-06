@@ -1,0 +1,28 @@
+.jump-sidebar-main {
+  width: 100%;
+  height: 160px;
+  overflow: auto;
+}
+
+.jump-sidebar-search input {
+  width: 80% !important;
+}
+
+.jump-sidebar-flowlist {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.jump-sidebar-img {
+  width: 45px;
+  height: 45px;
+}
+
+.jump-sidebar-flowlist span {
+  font-weight: 600;
+}
+
+
+
+

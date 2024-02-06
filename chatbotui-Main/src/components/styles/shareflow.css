@@ -1,0 +1,90 @@
+/* ------------------SHARE EMBBED ------------------------------------*/
+.share-embed-container {
+  width: 100%;
+  background-color: #f7f7fe;
+}
+.share-embed-main {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 3rem;
+}
+
+.share-embed-header {
+  padding: 10px;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.share-embed-select {
+  display: flex;
+  width: 100%;
+  padding: 5px;
+}
+.share-embed-body {
+  margin-top: 10px;
+}
+
+.share-embed-body span,
+.share-embed-code span {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.embed-textarea {
+  resize: none;
+}
+
+.share-embed-select-live {
+  height: 3rem;
+  background-color: cadetblue;
+  border-radius: 5px;
+  width: 3rem;
+  margin: 0.5rem 1.5rem;
+  cursor: pointer;
+  padding: 11px 18px;
+}
+
+.share-select-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.share-select-item span {
+  font-weight: 600;
+  font-size: 13px;
+}
+.share-embed-select-live:hover {
+  background-color: rgb(77, 132, 134);
+}
+
+.share-embed-code .embed-textarea {
+  margin-top: 10px;
+}
+
+.share-embed-code {
+  margin: 1.5rem 0px;
+}
+
+.share-link-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 2rem;
+}
+
+.share-link-container span {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+/* ------SHARE-LINK--------------------- */
+
+/* .share-link-notpublish {
+  border: 1px solid red;
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  width: 95px;
+  height: 39px;
+  background: transparent;
+} */

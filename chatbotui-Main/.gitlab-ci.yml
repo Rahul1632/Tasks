@@ -1,0 +1,51 @@
+stages:
+   - buildAndDeploy
+dev:  
+   image: node:16.14.0
+     
+   stage: buildAndDeploy 
+   script:
+      # Set PATH
+      - node -v
+      - git reset --hard
+      - export PATH=$PATH:/usr/bin/npm    
+      # Install dependencies 
+      - yarn install   
+      # Build App    
+      - CI=false yarn run build:dev
+      - pip3 install awscli
+      - chmod +x ~/.local/bin/aws
+      - aws s3 sync ./build s3://bril-chatbot
+   rules:
+      - if: ($CI_COMMIT_BRANCH == "dev")     
+   artifacts:    
+      paths:      
+         # Build folder      
+         - build/    
+      expire_in: 1 hour
+   tags:
+    - brilcrm
+prod:  
+   image: node:16.14.0
+     
+   stage: buildAndDeploy 
+   script:
+      # Set PATH
+      - git reset --hard
+      - export PATH=$PATH:/usr/bin/npm    
+      # Install dependencies 
+      - yarn install   
+      # Build App    
+      - CI=false yarn run build:prod
+      - pip3 install awscli
+      - chmod +x ~/.local/bin/aws
+      - aws s3 sync ./build s3://bril-chatbot-prod
+   rules:
+      - if: ($CI_COMMIT_BRANCH == "master")     
+   artifacts:    
+      paths:      
+         # Build folder      
+         - build/    
+      expire_in: 1 hour
+   tags:
+    - brilcrm

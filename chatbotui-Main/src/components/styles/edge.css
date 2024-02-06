@@ -1,0 +1,87 @@
+.react-flow__edge.animated path {
+  width: 50px;
+  stroke-dasharray: 0 !important;
+  -webkit-animation: none !important;
+  animation: none !important;
+  cursor: pointer;
+}
+
+.react-flow__edge.animated path:hover {
+  stroke-dasharray: 5 !important;
+  stroke: rgb(255, 58, 58) !important;
+  -webkit-animation: dashdraw 0.5s linear infinite !important;
+  animation: dashdraw 0.5s linear infinite !important;
+  z-index: 5 !important;
+}
+
+.react-flow__edge:hover path {
+  stroke-dasharray: 5 !important;
+  animation: dashdraw 0.5s linear infinite !important;
+  stroke: rgb(255, 58, 58) !important;
+}
+
+.react-flow__edge-path {
+  stroke: #b1b1b7;
+  stroke-width: 3px !important;
+}
+
+.edgebutton {
+  visibility: hidden;
+  padding: 9px !important;
+  background-color: rgb(255, 58, 58) !important;
+  border-radius: 50% !important;
+  cursor: pointer;
+}
+
+.analyze-user-count {
+  position: absolute;
+  top: 10%;
+  width: 10rem;
+  height: 4rem;
+}
+.user-count-percentage {
+  position: absolute;
+  top: 10%;
+  width: 16rem;
+  height: 4rem;
+}
+
+.user-count-analyze {
+  /* visibility: hidden; */
+  padding: 9px !important;
+  background-color: rgb(121, 213, 148) !important;
+  z-index: 10 !important;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  position: absolute !important;
+  top: 23px;
+  left: 10px;
+}
+.user-count-analyze textpath {
+  font-size: 10px;
+  font-weight: 500;
+  color: white;
+}
+
+.react-flow__edge:hover .edgebutton {
+  visibility: visible;
+  stroke: rgb(230 16 56) !important;
+}
+
+.analyze-show-percentage {
+  color: white;
+  cursor: pointer;
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 600;
+  background-color: var(--background-color) !important;
+}
+
+/* .react-flow__edge:hover .user-count-analyze {
+  visibility: visible !important;
+  position: absolute !important;
+  top: 23px;
+} */

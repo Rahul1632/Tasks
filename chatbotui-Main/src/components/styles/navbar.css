@@ -1,0 +1,142 @@
+:root {
+  --main-color: #146efd;
+  --sidemenu-color: #132746;
+  --second-color: aliceblue;
+  --lato-font: "Lato", sans-serif;
+  --M-plus-font: "Poppins", sans-serif;
+  --poppins-font: "Poppins", sans-serif;
+  --dancing-font: "Dancing Script", cursive;
+}
+
+.navbar {
+  width: 100%;
+  height: 4rem;
+  background-color: #ffffff;
+  padding: 0 10px !important;
+}
+
+.navbar-logo {
+  display: flex;
+  justify-content: space-between;
+  width: 7rem;
+  cursor: pointer;
+  align-items: center;
+}
+
+.navbar-select-item {
+  display: flex;
+  justify-content: space-between;
+  width: 18rem;
+  cursor: pointer;
+}
+
+.navbar-select-item .active {
+  background-color: rgba(99, 108, 226, 0.08);
+  color: #636ce2;
+}
+
+.navbar-end-icons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-end-list1 {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-end-list1 p {
+  margin: 0px 5px 0px 0px;
+  padding: 0px;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-weight: normal;
+}
+
+.preview-icon {
+  width: 30px;
+  height: 30px;
+  color: #45496e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebf1f5;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.preview-icon:hover {
+  background-color: #e1eaf0;
+}
+
+.navbar-end-list3 {
+  margin: 0 10px;
+}
+
+.brilbot-logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.brilbot-logo {
+  width: 60px;
+}
+
+.brilbot-logo img {
+  width: 100%;
+}
+
+.brilbot-logo-section span {
+  font-size: 22px;
+  letter-spacing: 0px;
+  /* max-width: 200px; */
+  width: 200px;
+}
+
+.publish-card {
+  position: absolute !important;
+  top: 85%;
+  right: 1.1%;
+  z-index: 5;
+  width: 5.3rem;
+  height: 2.2rem;
+  align-items: center;
+  padding: 5px;
+  color: black !important;
+  background-color: #bbc8cb !important;
+}
+
+.publish-card a {
+  color: black !important;
+}
+
+.publish-btn {
+  margin-right: 1px;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.dropdown-btn {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.flow-navbar-options {
+  position: relative;
+  padding: 8px 15px;
+  border-radius: 3px;
+  font-size: 14px;
+  margin: 0px 8px 0px 14px;
+  letter-spacing: 0.6px !important;
+  font-weight: 400;
+}
+
+.flow-navbar-options:not(:last-child):before {
+  color: rgba(0, 0, 0, 0.5);
+  content: "\203A";
+  pointer-events: none;
+  position: absolute;
+  right: -15px;
+}

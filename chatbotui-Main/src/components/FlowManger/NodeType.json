@@ -1,0 +1,108 @@
+[
+  {
+    "ESSENTIALS": [
+      {
+        "id": 1,
+        "name": "Button",
+        "type": "button",
+        "icon": "fa fa-circle"
+      },
+      {
+        "id": 2,
+        "name": "Send a message",
+        "type": "chat",
+        "icon": "fa fa-comment"
+      },
+      {
+        "id": 3,
+        "name": "Media",
+        "type": "media",
+        "icon": "fa fa-comment"
+      }
+    ],
+    "QUESTIONS": [
+      {
+        "id": 1,
+        "name": "Button",
+        "type": "button",
+        "icon": "fa fa-circle"
+      },
+      {
+        "id": 2,
+        "name": "Text",
+        "type": "text",
+        "icon": "fa fa-file-text"
+      },
+      {
+        "id": 3,
+        "name": "Number",
+        "type": "number",
+        "icon": "fa fa-phone-square"
+      },
+      {
+        "id": 4,
+        "name": "Phone",
+        "type": "phone",
+        "icon": "fa fa-mobile"
+      },
+      {
+        "id": 5,
+        "name": "URL",
+        "type": "url",
+        "icon": "fa  fa-globe"
+      },
+      {
+        "id": 6,
+        "name": "Email",
+        "type": "email",
+        "icon": "fa fa-envelope"
+      },
+      {
+        "id": 7,
+        "name": "Date",
+        "type": "date",
+        "icon": "fa fa-calendar"
+      },
+      {
+        "id": 8,
+        "name": "File",
+        "type": "file",
+        "icon": "fa fa-calendar"
+      }
+    ],
+    "FLOWOPERATIONS": [
+      {
+        "id": 1,
+        "name": "Conditions",
+        "type": "conditional_logic",
+        "icon": "fas fa-infinity"
+      },
+      {
+        "id": 2,
+        "name": "Jump",
+        "type": "jumpflow",
+        "icon": "fas fa-infinity"
+      }
+    ],
+    "INTEGRATIONS": [
+      {
+        "id": 1,
+        "name": "Conditions",
+        "type": "conditional_logic",
+        "icon": "fas fa-infinity"
+      },
+      {
+        "id": 2,
+        "name": "Slack",
+        "type": "slack",
+        "icon": "fas fa-infinity"
+      },
+      {
+        "id": 3,
+        "name": "Send an email (SendGrid)",
+        "type": "send_email",
+        "icon": "fas fa-infinity"
+      }
+    ]
+  }
+]
